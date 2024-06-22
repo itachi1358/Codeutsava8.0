@@ -1,0 +1,463 @@
+*{
+    padding: 0%;
+    margin: 0;
+    overflow-x:hidden;
+    background:url(final_wallpaper.png) fixed center;
+    cursor: url("sw.png"), auto;
+    scrollbar-color: transparent;
+    font-family: jp;
+}
+@font-face {
+    font-family: stylish-jp;
+    src: url('japan.ttf');
+}
+@font-face {
+    font-family: jp;
+    src: url('final_font.ttf');
+}
+body {
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.navbar{
+    position: sticky;
+    z-index: 10;
+    height: 60px;
+    width: 100%;    
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: transparent;
+    opacity: 1;
+}
+.icon{
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    background:transparent;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    background: transparent; 
+}
+.navbar li{
+    font-family: jp;
+    margin-left: 4%;
+    list-style: none;
+    transition: all 0.6s ease;
+    background: transparent;
+}
+.navbar li:hover{
+    transform: translateY(-5px);
+    color: rgb(4, 4, 38);
+    border-bottom: 1px solid rgb(4,4,38);
+}
+.codutsava{
+    display:flex;
+    z-index:10;
+    height: 150px;
+    width: 1200px;
+    margin-left:13%;
+    margin-top: 15%;
+    justify-content:center;
+    align-items:center;
+    font-size:120px;
+    opacity:1;
+    color:white;
+    text-shadow: 3px 4px 25px #ffffff;
+    transition: opacity 7s ease, tranform 4s ease;
+    font-family:jp;
+    background:transparent;
+}
+.cic{
+    display:flex;
+    z-index:10;
+    height: 50px;
+    width: 500px;
+    margin-left:34%;
+    margin-right: 34%;
+    margin-top: 1%;
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+    font-size:28px;
+    color:white;
+    text-shadow: 4px 4px 15px #ffffff;
+    transition: opacity 7s ease, tranform 4s ease;
+    font-family:jp;
+    background: transparent;
+}
+.content{
+    height: 200px;
+    padding: 2% 4% 1% 1%;
+    color:white ;
+    border-top: 2px solid white;
+    border-bottom: 1px solid white;
+    background: transparent;
+    margin-top: 30%;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20vb;
+    font-family:stylish-jp;
+    
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    font-family: jp;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    flex-wrap:wrap;
+}
+.Flex-container{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    margin-top:4%;
+    height:80px;
+    width: 100%;
+}
+.flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);    
+    overflow: hidden;
+    font-size: 27px;
+    margin-left: 3%;
+    width: 210px;
+    height: 60px;
+    background: transparent;
+}
+
+.about{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(0, 255, 255, 0.312);
+    width: 80%;
+    padding-left: 10%;
+}
+.text{
+    margin-top:-2%;
+    word-spacing: 4px;
+}
+.winners{
+    margin-top: 4%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.winner-container {
+    padding-left: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.win-text{
+    display: flex;
+    font-size: 40px;
+    margin-left: 46%;
+    color: #ffffff;
+}
+.win {
+    display: block;
+    width: 300px; 
+    height: auto;
+}
+.winner1 {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-45%, -45%); 
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-size: 18px; 
+    font-weight:100;
+}
+
+.teams {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.teams-txt {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20%;
+}
+
+.team-member {
+    position: relative;
+    width: 250px; 
+    height: 180px; 
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+}
+.teams-txt{
+    margin: 4%;
+    color: #ffffff;
+    font-size: 35px;
+}
+.team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    overflow: hidden;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+    margin-right: 1%;
+}
+.problem-statment-text{
+    margin-top: 10%;
+    font-size: 70px;
+    color: white;
+}
+.problem-statments{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 380px;
+    overflow-y: hidden;
+    width: 100%;
+}
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    height:190px;
+    width: 190px;
+    border-radius: 50%;
+    margin-top:8%;
+    overflow: hidden;
+    margin-left:4%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+    box-shadow:  3px 4px 30px white;
+    font-size: 80px;
+    transition: all 0.7s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.rectangle:hover{
+    color:white;
+    background: rgba(0, 0, 0, 0.386);
+    transform: translateY(-5%);
+}
+.ps-2{
+    display: flex;
+    margin-left:20%;
+    margin-top: -8%;
+}
+.guidelines{
+    color: #ffffff;
+    background: transparent;
+    margin-top: 16%;
+    font-size: 60px;
+    height: 220px;
+    margin-left: 35%;
+}
+.guidelinefile{
+    font-size: 30px;
+}
+.guidelinefile a{
+    text-decoration: none;
+    color: gray;
+}
+footer{
+    height: 40px;
+    margin-left: -4%;
+    margin-bottom: -3%;
+    background: black;
+    width: 120%;
+}
+.foot-text{
+    color: #ffffff;
+    background: black;
+    margin-top: 1%;
+    margin-left: 40%;
+}
+.problem-statment-text{
+    margin-left: 25%;
+}
+.mobile-view{
+    visibility: hidden;
+    overflow: hidden;
+    height: 32px;
+    width: 32px;
+    position: static;
+    color: #ffffff;
+    background: transparent;
+}
+.vertical_list{
+    flex-direction: column;
+  
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 15px; /* Adjusted font size */
+    }
+
+    .codutsava {
+        font-size: 60px;
+        margin-left: -27%;
+    }
+
+    .cic {
+        font-size: 30px;
+        width: 90%;
+        margin-left:8%;
+    }
+    .flx{
+        font-size:21px;
+    }
+    .about-txt{
+        width: 90%;
+        margin-left:34%;
+        margin-bottom:12px;
+    }
+
+    .content {
+        margin-top: 15%;
+    }
+
+    .content2 {
+        font-size: 28px;
+    }
+
+    .about {
+        width: 90%;
+    }
+    .win-text{
+        font-size:28px;
+    }
+    .win {
+        width: 80%;
+    }
+
+    .winner1 {
+        font-size: 19px;
+        margin-left:-11%;
+    }
+    .problem-statment-text{
+        font-size:40px;
+    }
+
+    .rectangle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .guidelines {
+        font-size: 32px;
+    }
+
+    .guidelinefile {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        position: sticky;
+        top:0;
+        font-size: 17px; /* Adjusted font size */
+        height:50px;
+    }
+    .navbar.vertical {
+        display: inline;
+        height: 10px;
+    }
+    .navbar li {
+        visibility:hidden;
+        margin: 2% ;
+    }
+    .mobile-view{
+        visibility: visible;
+        position: absolute;
+    }
+    .codutsava {
+        font-size: 38px;
+        margin-right:44%;
+        margin-left:-369px
+    }
+    .cic {
+        font-size: 24px;
+    }
+    .content{
+        height:270px;
+    }
+    .content2 {
+        height:20px;
+        font-size: 24px;
+    }
+    .Flex-container{
+        height:200px;
+        display:block;
+    }
+    .win {
+        width: 100%;
+    }
+
+    .winner1 {
+        font-size: 10px;
+        margin-left:1px;
+    }
+
+    .rectangle {
+        height: 80px;
+        width: 80px;
+        font-size:30px;
+    }
+
+    .guidelines {
+        font-size: 24px;
+    }
+
+    .guidelinefile {
+        font-size: 20px;
+    }
+}

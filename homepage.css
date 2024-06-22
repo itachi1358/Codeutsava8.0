@@ -1,0 +1,162 @@
+*{
+    padding: 0%;
+    margin: 0;
+    overflow:hidden;
+    background-color: black;
+    cursor: url("sw.png"), auto;
+}
+
+@font-face {
+    font-family: jp;
+    src: url('final_font.ttf');
+}
+.background-add {
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: -1;
+    opacity: 0;
+    transition:opacity 6s ease;
+}
+.overflow-10{
+    overflow: visible;
+}
+.visible3{
+    position:absolute;
+    background: url('final_wallpaper.png') no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+.introvideo{
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.navbar{
+    position: absolute;
+    z-index: 10;
+    height: 60px;
+    width: 100%;    
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: transparent;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 4s ease, transform 4s ease;
+}
+.icon{
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    background:transparent;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    background-color: transparent; 
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.navbar li{
+    font-family: jp;
+    margin-left: 4%;
+    list-style: none;
+    transition: all 0.6s ease;
+    background-color: transparent;
+}
+.navbar li:hover{
+    transform: translateY(-5px);
+    color: rgb(4, 4, 38);
+    border-bottom: 1px solid rgb(4,4,38);
+}
+.codutsava{
+    display:flex;
+    z-index:10;
+    height: 150px;
+    width: 1200px;
+    margin-left:13%;
+    margin-top: 15%;
+    justify-content:center;
+    align-items:center;
+    font-size:120px;
+    opacity:0;
+    text-shadow: 3px 4px 25px #ffffff;
+    transform: translateY(150%);
+    transition: opacity 7s ease, tranform 4s ease;
+    font-family:jp;
+}
+.cic{
+    display:flex;
+    z-index:10;
+    height: 50px;
+    width: 500px;
+    margin-left:34%;
+    margin-top: 24%;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    font-size:28px;
+    text-shadow: 4px 4px 15px #ffffff;
+    transform: translateY(150%);
+    transition: opacity 7s ease, tranform 4s ease;
+    font-family:jp;
+    background-color: transparent;
+}
+
+.visible2{
+    position:absolute;
+    color:rgba(255, 255, 255, 0.674);
+    background: transparent;
+    opacity: 1;
+    transform: translateY(0%);
+}
+.no-display{
+    visibility: none;
+    height: 0;
+    width: 0;
+}
+
+.content{
+    height: 20vb;
+    margin-top: 65%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.start-btn{
+    position:absolute;
+    height: 40px;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+
+.visible-start-btn{
+    opacity: 1;
+    margin-top:30%;
+    margin-left:48%;
+    color: white;
+    background: #00ffff00;
+    border:none;
+    font-family: jp;
+    font-size: larger;
+}
+.start-btn a{
+    color: rgba(255, 255, 255, 0.673);
+    background: transparent;
+    text-decoration: none ;
+    text-shadow: 4px 4px 15px #ffffff;
+}
